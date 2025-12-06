@@ -6,6 +6,12 @@ FastAPI untuk memprediksi kegagalan mesin menggunakan Machine Learning dengan du
 
 ## Quick Start
 
+### Docker (build and run)
+```
+cd <repo-root>
+docker build -t failure-prediction -f src/Dockerfile .
+docker run -p 8000:8000 --rm failure-prediction
+```
 ### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
